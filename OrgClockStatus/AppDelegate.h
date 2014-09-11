@@ -14,8 +14,10 @@
 @property (weak) IBOutlet NSMenu *statusMenu;
 @property (strong, nonatomic) NSStatusItem *statusBar;
 
-@property NSImage *orgClockedIn;  // both should be readonly
-@property NSImage *orgClockedOut;  // but whatever
+@property NSImage* orgClockedIn;  // both should be readonly
+@property NSImage* orgClockedOut;  // but whatever
+@property BOOL status;
+
 
 -(IBAction)openGithubPage:(id)sender;
 -(IBAction)toggleRedMeansClockedOut:(id)sender;
