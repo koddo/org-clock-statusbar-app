@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAE5738C19C1100F008B9107 /* MyLookupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5738B19C1100F008B9107 /* MyLookupCommand.m */; };
+		FAE5739619C142D6008B9107 /* OrgClockIn.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5739519C142D6008B9107 /* OrgClockIn.m */; };
+		FAE5739919C144C5008B9107 /* OrgClockOut.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5739819C144C5008B9107 /* OrgClockOut.m */; };
 		FAF70DAB19C0FCE500250943 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF70DAA19C0FCE500250943 /* Cocoa.framework */; };
 		FAF70DB519C0FCE500250943 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF70DB319C0FCE500250943 /* InfoPlist.strings */; };
 		FAF70DB719C0FCE500250943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF70DB619C0FCE500250943 /* main.m */; };
@@ -33,8 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FAE5738A19C1100F008B9107 /* MyLookupCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLookupCommand.h; sourceTree = "<group>"; };
-		FAE5738B19C1100F008B9107 /* MyLookupCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLookupCommand.m; sourceTree = "<group>"; };
+		FAE5739419C142D6008B9107 /* OrgClockIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgClockIn.h; sourceTree = "<group>"; };
+		FAE5739519C142D6008B9107 /* OrgClockIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgClockIn.m; sourceTree = "<group>"; };
+		FAE5739719C144C5008B9107 /* OrgClockOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgClockOut.h; sourceTree = "<group>"; };
+		FAE5739819C144C5008B9107 /* OrgClockOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgClockOut.m; sourceTree = "<group>"; };
 		FAF70DA719C0FCE500250943 /* StatusBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF70DAA19C0FCE500250943 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FAF70DAD19C0FCE500250943 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -126,8 +129,10 @@
 				FAF70DDE19C106A800250943 /* StatusBarApp.sdef */,
 				FAF70DC219C0FCE500250943 /* Images.xcassets */,
 				FAF70DB119C0FCE500250943 /* Supporting Files */,
-				FAE5738A19C1100F008B9107 /* MyLookupCommand.h */,
-				FAE5738B19C1100F008B9107 /* MyLookupCommand.m */,
+				FAE5739419C142D6008B9107 /* OrgClockIn.h */,
+				FAE5739519C142D6008B9107 /* OrgClockIn.m */,
+				FAE5739719C144C5008B9107 /* OrgClockOut.h */,
+				FAE5739819C144C5008B9107 /* OrgClockOut.m */,
 			);
 			path = StatusBarApp;
 			sourceTree = "<group>";
@@ -262,7 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF70DBE19C0FCE500250943 /* AppDelegate.m in Sources */,
-				FAE5738C19C1100F008B9107 /* MyLookupCommand.m in Sources */,
+				FAE5739919C144C5008B9107 /* OrgClockOut.m in Sources */,
+				FAE5739619C142D6008B9107 /* OrgClockIn.m in Sources */,
 				FAF70DB719C0FCE500250943 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

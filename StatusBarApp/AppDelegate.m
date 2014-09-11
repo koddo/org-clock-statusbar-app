@@ -23,12 +23,12 @@
     // self.statusBar.title = @"Text";
     self.orgClockedOut = [NSImage imageNamed:@"org clocked out"];
     self.orgClockedIn = [NSImage imageNamed:@"org clocked in"];
-    self.statusBar.image = self.orgClockedOut;
-    self.statusBar.toolTip = @"nil so far";
-    
-    
     self.statusBar.menu = self.statusMenu;
     self.statusBar.highlightMode = YES;
+
+    self.statusBar.image = self.orgClockedOut;
+    [self.statusBar.menu itemWithTag:0].title = @"nil";
+    self.statusBar.toolTip = @"nil";
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  MyLookupCommand.h
+//  OrgClockOut.h
 //  StatusBarApp
 //
 //  Created by Alex Scherbanov on 11/09/14.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MyLookupCommand : NSScriptCommand
+@interface OrgClockOut : NSScriptCommand
 
 @end
