@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
@@ -32,6 +34,8 @@
 	<string>MainMenu</string>
 	<key>LSUIElement</key>
 	<true/>
+	<key>OSAScriptingDefinition</key>
+	<string>StatusBarApp.sdef</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

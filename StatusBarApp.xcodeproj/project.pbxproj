@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAE5738C19C1100F008B9107 /* MyLookupCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5738B19C1100F008B9107 /* MyLookupCommand.m */; };
 		FAF70DAB19C0FCE500250943 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF70DAA19C0FCE500250943 /* Cocoa.framework */; };
 		FAF70DB519C0FCE500250943 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF70DB319C0FCE500250943 /* InfoPlist.strings */; };
 		FAF70DB719C0FCE500250943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF70DB619C0FCE500250943 /* main.m */; };
@@ -18,6 +19,7 @@
 		FAF70DCB19C0FCE500250943 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF70DAA19C0FCE500250943 /* Cocoa.framework */; };
 		FAF70DD319C0FCE500250943 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF70DD119C0FCE500250943 /* InfoPlist.strings */; };
 		FAF70DD519C0FCE500250943 /* StatusBarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF70DD419C0FCE500250943 /* StatusBarAppTests.m */; };
+		FAF70DDF19C106A800250943 /* StatusBarApp.sdef in Resources */ = {isa = PBXBuildFile; fileRef = FAF70DDE19C106A800250943 /* StatusBarApp.sdef */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FAE5738A19C1100F008B9107 /* MyLookupCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLookupCommand.h; sourceTree = "<group>"; };
+		FAE5738B19C1100F008B9107 /* MyLookupCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLookupCommand.m; sourceTree = "<group>"; };
 		FAF70DA719C0FCE500250943 /* StatusBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StatusBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF70DAA19C0FCE500250943 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FAF70DAD19C0FCE500250943 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +54,7 @@
 		FAF70DD019C0FCE500250943 /* StatusBarAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StatusBarAppTests-Info.plist"; sourceTree = "<group>"; };
 		FAF70DD219C0FCE500250943 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAF70DD419C0FCE500250943 /* StatusBarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarAppTests.m; sourceTree = "<group>"; };
+		FAF70DDE19C106A800250943 /* StatusBarApp.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StatusBarApp.sdef; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +123,11 @@
 				FAF70DBC19C0FCE500250943 /* AppDelegate.h */,
 				FAF70DBD19C0FCE500250943 /* AppDelegate.m */,
 				FAF70DBF19C0FCE500250943 /* MainMenu.xib */,
+				FAF70DDE19C106A800250943 /* StatusBarApp.sdef */,
 				FAF70DC219C0FCE500250943 /* Images.xcassets */,
 				FAF70DB119C0FCE500250943 /* Supporting Files */,
+				FAE5738A19C1100F008B9107 /* MyLookupCommand.h */,
+				FAE5738B19C1100F008B9107 /* MyLookupCommand.m */,
 			);
 			path = StatusBarApp;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				FAF70DC319C0FCE500250943 /* Images.xcassets in Resources */,
 				FAF70DBB19C0FCE500250943 /* Credits.rtf in Resources */,
 				FAF70DC119C0FCE500250943 /* MainMenu.xib in Resources */,
+				FAF70DDF19C106A800250943 /* StatusBarApp.sdef in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF70DBE19C0FCE500250943 /* AppDelegate.m in Sources */,
+				FAE5738C19C1100F008B9107 /* MyLookupCommand.m in Sources */,
 				FAF70DB719C0FCE500250943 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +476,7 @@
 				FAF70DDA19C0FCE500250943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAF70DDB19C0FCE500250943 /* Build configuration list for PBXNativeTarget "StatusBarAppTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +485,7 @@
 				FAF70DDD19C0FCE500250943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
