@@ -27,7 +27,7 @@
     NSImage* orgClockedIn = [(AppDelegate *)[[NSApplication sharedApplication] delegate] orgClockedIn];
 
     statusBar.image = orgClockedIn;
-    [statusBar.menu itemWithTag:0].title = [NSString stringWithFormat:@"%@/%@/", @"org-clock-status: ", taskName];
+    [statusBar.menu itemWithTag:1].title = [NSString stringWithFormat:@"%@/%@/", @"org-clock-status: ", taskName];
     statusBar.toolTip = taskName;
     
     return nil;

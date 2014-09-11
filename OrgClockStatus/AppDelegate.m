@@ -26,8 +26,11 @@
     self.statusBar.menu = self.statusMenu;
     self.statusBar.highlightMode = YES;
 
+    NSMenuItem * theItem = [self.statusBar.menu itemWithTag:2];
+    [theItem setState: NSOnState];
+
     self.statusBar.image = self.orgClockedOut;
-    [self.statusBar.menu itemWithTag:0].title = @"org-clock-status: nil";
+    [self.statusBar.menu itemWithTag:1].title = @"org-clock-status: nil";
     self.statusBar.toolTip = @"org-clock-status: nil";
 }
 
@@ -38,6 +41,13 @@
 
 -(IBAction)toggleColors:(id)sender
 {
+    NSMenuItem * theItem = [self.statusBar.menu itemWithTag:2];
+    
+    if (theItem.state == NSOnState) {
+        [theItem setState: NSOffState];
+    } else {
+        [theItem setState: NSOnState];
+    }
     
 }
 

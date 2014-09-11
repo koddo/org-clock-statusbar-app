@@ -669,11 +669,11 @@
         </menu>
         <menu id="qpG-IG-srZ">
             <items>
-                <menuItem title="nil" enabled="NO" id="E0Q-uK-CeE">
+                <menuItem title="nil" tag="1" enabled="NO" id="E0Q-uK-CeE">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="vU2-cm-ULt"/>
-                <menuItem title="Red means clocked out" state="on" id="lf1-6y-H71">
+                <menuItem title="Red means clocked out" tag="2" id="lf1-6y-H71">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="toggleColors:" target="Voe-Tx-rLC" id="DDE-qt-2pa"/>
