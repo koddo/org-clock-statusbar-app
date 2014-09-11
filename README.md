@@ -1,6 +1,8 @@
 OrgClockStatus.app
 ======
 
+For Mac OS X 10.8 or later.
+
 # A small square in status bar
 
 It turns red when you do nothing.
