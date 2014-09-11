@@ -31,7 +31,9 @@
     NSLog(@"lookup: %@", stringToSearch);
     // $ osascript -e 'tell application "StatusBarApp" to lookup "first try"'
     
-    [(AppDelegate *)[[NSApplication sharedApplication] delegate] statusBar].title = stringToSearch;
+    [(AppDelegate *)[[NSApplication sharedApplication] delegate] statusBar].toolTip = stringToSearch;
+    
+    [(AppDelegate *)[[NSApplication sharedApplication] delegate] statusBar].image = [(AppDelegate *)[[NSApplication sharedApplication] delegate] orgClockedIn];
     
     return nil;
 }

@@ -20,10 +20,12 @@
 - (void) awakeFromNib {
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     
-    self.statusBar.title = @"G";
+    // self.statusBar.title = @"Text";
+    self.orgClockedOut = [NSImage imageNamed:@"org clocked out"];
+    self.orgClockedIn = [NSImage imageNamed:@"org clocked in"];
+    self.statusBar.image = self.orgClockedOut;
+    self.statusBar.toolTip = @"nil so far";
     
-    // you can also set an image
-    //self.statusBar.image =
     
     self.statusBar.menu = self.statusMenu;
     self.statusBar.highlightMode = YES;
