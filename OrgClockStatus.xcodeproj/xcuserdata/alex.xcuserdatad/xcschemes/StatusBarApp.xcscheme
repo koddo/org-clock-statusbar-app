@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAF70DA619C0FCE500250943"
                BuildableName = "StatusBarApp.app"
-               BlueprintName = "StatusBarApp"
-               ReferencedContainer = "container:StatusBarApp.xcodeproj">
+               BlueprintName = "OrgClockStatus"
+               ReferencedContainer = "container:OrgClockStatus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FAF70DC719C0FCE500250943"
                BuildableName = "StatusBarAppTests.xctest"
-               BlueprintName = "StatusBarAppTests"
-               ReferencedContainer = "container:StatusBarApp.xcodeproj">
+               BlueprintName = "OrgClockStatusTests"
+               ReferencedContainer = "container:OrgClockStatus.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAF70DA619C0FCE500250943"
             BuildableName = "StatusBarApp.app"
-            BlueprintName = "StatusBarApp"
-            ReferencedContainer = "container:StatusBarApp.xcodeproj">
+            BlueprintName = "OrgClockStatus"
+            ReferencedContainer = "container:OrgClockStatus.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAF70DA619C0FCE500250943"
             BuildableName = "StatusBarApp.app"
-            BlueprintName = "StatusBarApp"
-            ReferencedContainer = "container:StatusBarApp.xcodeproj">
+            BlueprintName = "OrgClockStatus"
+            ReferencedContainer = "container:OrgClockStatus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FAF70DA619C0FCE500250943"
             BuildableName = "StatusBarApp.app"
-            BlueprintName = "StatusBarApp"
-            ReferencedContainer = "container:StatusBarApp.xcodeproj">
+            BlueprintName = "OrgClockStatus"
+            ReferencedContainer = "container:OrgClockStatus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
