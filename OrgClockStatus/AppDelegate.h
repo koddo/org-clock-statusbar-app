@@ -18,7 +18,9 @@
 @property NSImage *orgClockedOut;  // but whatever
 
 -(IBAction)openGithubPage:(id)sender;
--(IBAction)toggleColors:(id)sender;
+-(IBAction)toggleRedMeansClockedOut:(id)sender;
 
+-(void) clockIn:(NSString*)taskName;
+-(void) clockOut;
 
 @end

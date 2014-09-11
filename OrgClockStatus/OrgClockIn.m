@@ -23,12 +23,7 @@
         [self setScriptErrorString:@"A parameter is expected for the verb 'clockin', should be task name."];
     }
 
-    NSStatusItem* statusBar = [(AppDelegate *)[[NSApplication sharedApplication] delegate] statusBar];
-    NSImage* orgClockedIn = [(AppDelegate *)[[NSApplication sharedApplication] delegate] orgClockedIn];
-
-    statusBar.image = orgClockedIn;
-    [statusBar.menu itemWithTag:1].title = [NSString stringWithFormat:@"%@/%@/", @"org-clock-status: ", taskName];
-    statusBar.toolTip = taskName;
+    [(AppDelegate *)[[NSApplication sharedApplication] delegate] clockIn:taskName];
     
     return nil;
 }

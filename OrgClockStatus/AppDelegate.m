@@ -25,13 +25,21 @@
     self.orgClockedIn = [NSImage imageNamed:@"org clocked in"];
     self.statusBar.menu = self.statusMenu;
     self.statusBar.highlightMode = YES;
+    [self toggle];
+    [self clockOut];
+}
 
-    NSMenuItem * theItem = [self.statusBar.menu itemWithTag:2];
-    [theItem setState: NSOnState];
+-(void) clockIn:(NSString*)taskName {
+    self.statusBar.image = self.orgClockedIn;
+    [self.statusBar.menu itemWithTag:1].title = taskName;
+    self.statusBar.toolTip = taskName;
+}
 
+-(void) clockOut {
+    NSString* taskName = @"nil";
     self.statusBar.image = self.orgClockedOut;
-    [self.statusBar.menu itemWithTag:1].title = @"org-clock-status: nil";
-    self.statusBar.toolTip = @"org-clock-status: nil";
+    [self.statusBar.menu itemWithTag:1].title = taskName;
+    self.statusBar.toolTip = taskName;
 }
 
 -(IBAction)openGithubPage:(id)sender
@@ -39,16 +47,23 @@
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/koddo/org-clock-status-app"]];
 }
 
--(IBAction)toggleColors:(id)sender
+-(IBAction)toggleRedMeansClockedOut:(id)sender
 {
-    NSMenuItem * theItem = [self.statusBar.menu itemWithTag:2];
+    [self toggle];
+}
+
+- (void)toggle {
+    NSMenuItem * theItem = [self.statusBar.menu itemWithTag:2];   // set it manually in interface builder
     
     if (theItem.state == NSOnState) {
         [theItem setState: NSOffState];
+        self.orgClockedOut = [NSImage imageNamed:@"org clocked in"];
+        self.orgClockedIn = [NSImage imageNamed:@"org clocked out"];
     } else {
         [theItem setState: NSOnState];
+        self.orgClockedOut = [NSImage imageNamed:@"org clocked out"];
+        self.orgClockedIn = [NSImage imageNamed:@"org clocked in"];
     }
-    
 }
 
 @end
