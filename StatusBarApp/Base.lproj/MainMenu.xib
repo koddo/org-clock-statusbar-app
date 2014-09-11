@@ -668,17 +668,10 @@
         </menu>
         <menu id="qpG-IG-srZ">
             <items>
-                <menuItem title="Toggle" id="E0Q-uK-CeE">
+                <menuItem title="nil" enabled="NO" id="E0Q-uK-CeE">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="1CY-Lh-6CG"/>
-                <menuItem title="Preferences" id="avy-Xd-jj8">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="About" id="HhM-LE-IRt">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem isSeparatorItem="YES" id="RFv-rN-J4O"/>
                 <menuItem title="Quit" id="caH-QQ-H9e">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
