@@ -15,7 +15,7 @@ https://github.com/koddo/OrgClockStatus/releases/download/0.1.0/OrgClockStatus.a
 
 ```
 $ osascript -e 'tell application "OrgClockStatus" to clockin "some task"'
-$ osascript -e 'tell application "OrgClockStatus" to clockout
+$ osascript -e 'tell application "OrgClockStatus" to clockout'
 ```
 
 You can configure two keybindings for this in [BetterTouchTool](http://www.boastr.net/) or in Emacs itself.
