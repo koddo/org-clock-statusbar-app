@@ -57,12 +57,12 @@
     
     if (theItem.state == NSOnState) {
         [theItem setState: NSOffState];
-        self.orgClockedOut = [NSImage imageNamed:@"org clocked in"];
-        self.orgClockedIn = [NSImage imageNamed:@"org clocked out"];
+        self.orgClockedOut = [NSImage imageNamed:@"black square"];
+        self.orgClockedIn = [NSImage imageNamed:@"red square"];
     } else {
         [theItem setState: NSOnState];
-        self.orgClockedOut = [NSImage imageNamed:@"org clocked out"];
-        self.orgClockedIn = [NSImage imageNamed:@"org clocked in"];
+        self.orgClockedOut = [NSImage imageNamed:@"red square"];
+        self.orgClockedIn = [NSImage imageNamed:@"black square"];
     }
 }
 
