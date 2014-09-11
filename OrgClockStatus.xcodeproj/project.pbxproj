@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1DDB8219C1E5B30099484A /* OrgClockStatus.icns in Resources */ = {isa = PBXBuildFile; fileRef = FA1DDB8119C1E5B30099484A /* OrgClockStatus.icns */; };
 		FAE5739619C142D6008B9107 /* OrgClockIn.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5739519C142D6008B9107 /* OrgClockIn.m */; };
 		FAE5739919C144C5008B9107 /* OrgClockOut.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5739819C144C5008B9107 /* OrgClockOut.m */; };
 		FAF70DAB19C0FCE500250943 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF70DAA19C0FCE500250943 /* Cocoa.framework */; };
@@ -19,7 +20,7 @@
 		FAF70DCA19C0FCE500250943 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF70DC919C0FCE500250943 /* XCTest.framework */; };
 		FAF70DCB19C0FCE500250943 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF70DAA19C0FCE500250943 /* Cocoa.framework */; };
 		FAF70DD319C0FCE500250943 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAF70DD119C0FCE500250943 /* InfoPlist.strings */; };
-		FAF70DD519C0FCE500250943 /* StatusBarAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF70DD419C0FCE500250943 /* StatusBarAppTests.m */; };
+		FAF70DD519C0FCE500250943 /* OrgClockStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF70DD419C0FCE500250943 /* OrgClockStatusTests.m */; };
 		FAF70DDF19C106A800250943 /* OrgClockStatus.sdef in Resources */ = {isa = PBXBuildFile; fileRef = FAF70DDE19C106A800250943 /* OrgClockStatus.sdef */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +30,12 @@
 			containerPortal = FAF70D9F19C0FCE500250943 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FAF70DA619C0FCE500250943;
-			remoteInfo = StatusBarApp;
+			remoteInfo = OrgClockStatus;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1DDB8119C1E5B30099484A /* OrgClockStatus.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = OrgClockStatus.icns; sourceTree = "<group>"; };
 		FAE5739419C142D6008B9107 /* OrgClockIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgClockIn.h; sourceTree = "<group>"; };
 		FAE5739519C142D6008B9107 /* OrgClockIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgClockIn.m; sourceTree = "<group>"; };
 		FAE5739719C144C5008B9107 /* OrgClockOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgClockOut.h; sourceTree = "<group>"; };
@@ -46,7 +48,7 @@
 		FAF70DB219C0FCE500250943 /* OrgClockStatus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrgClockStatus-Info.plist"; sourceTree = "<group>"; };
 		FAF70DB419C0FCE500250943 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAF70DB619C0FCE500250943 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FAF70DB819C0FCE500250943 /* StatusBarApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StatusBarApp-Prefix.pch"; sourceTree = "<group>"; };
+		FAF70DB819C0FCE500250943 /* OrgClockStatus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrgClockStatus-Prefix.pch"; sourceTree = "<group>"; };
 		FAF70DBA19C0FCE500250943 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		FAF70DBC19C0FCE500250943 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAF70DBD19C0FCE500250943 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,9 +56,9 @@
 		FAF70DC219C0FCE500250943 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FAF70DC819C0FCE500250943 /* OrgClockStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrgClockStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF70DC919C0FCE500250943 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FAF70DD019C0FCE500250943 /* StatusBarAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StatusBarAppTests-Info.plist"; sourceTree = "<group>"; };
+		FAF70DD019C0FCE500250943 /* OrgClockStatusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrgClockStatusTests-Info.plist"; sourceTree = "<group>"; };
 		FAF70DD219C0FCE500250943 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FAF70DD419C0FCE500250943 /* StatusBarAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarAppTests.m; sourceTree = "<group>"; };
+		FAF70DD419C0FCE500250943 /* OrgClockStatusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrgClockStatusTests.m; sourceTree = "<group>"; };
 		FAF70DDE19C106A800250943 /* OrgClockStatus.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OrgClockStatus.sdef; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,8 +86,9 @@
 		FAF70D9E19C0FCE500250943 = {
 			isa = PBXGroup;
 			children = (
-				FAF70DB019C0FCE500250943 /* StatusBarApp */,
-				FAF70DCE19C0FCE500250943 /* StatusBarAppTests */,
+				FA1DDB8119C1E5B30099484A /* OrgClockStatus.icns */,
+				FAF70DB019C0FCE500250943 /* OrgClockStatus */,
+				FAF70DCE19C0FCE500250943 /* OrgClockStatusTests */,
 				FAF70DA919C0FCE500250943 /* Frameworks */,
 				FAF70DA819C0FCE500250943 /* Products */,
 			);
@@ -120,7 +123,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		FAF70DB019C0FCE500250943 /* StatusBarApp */ = {
+		FAF70DB019C0FCE500250943 /* OrgClockStatus */ = {
 			isa = PBXGroup;
 			children = (
 				FAF70DBC19C0FCE500250943 /* AppDelegate.h */,
@@ -134,7 +137,7 @@
 				FAE5739719C144C5008B9107 /* OrgClockOut.h */,
 				FAE5739819C144C5008B9107 /* OrgClockOut.m */,
 			);
-			path = StatusBarApp;
+			path = OrgClockStatus;
 			sourceTree = "<group>";
 		};
 		FAF70DB119C0FCE500250943 /* Supporting Files */ = {
@@ -143,25 +146,25 @@
 				FAF70DB219C0FCE500250943 /* OrgClockStatus-Info.plist */,
 				FAF70DB319C0FCE500250943 /* InfoPlist.strings */,
 				FAF70DB619C0FCE500250943 /* main.m */,
-				FAF70DB819C0FCE500250943 /* StatusBarApp-Prefix.pch */,
+				FAF70DB819C0FCE500250943 /* OrgClockStatus-Prefix.pch */,
 				FAF70DB919C0FCE500250943 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FAF70DCE19C0FCE500250943 /* StatusBarAppTests */ = {
+		FAF70DCE19C0FCE500250943 /* OrgClockStatusTests */ = {
 			isa = PBXGroup;
 			children = (
-				FAF70DD419C0FCE500250943 /* StatusBarAppTests.m */,
+				FAF70DD419C0FCE500250943 /* OrgClockStatusTests.m */,
 				FAF70DCF19C0FCE500250943 /* Supporting Files */,
 			);
-			path = StatusBarAppTests;
+			path = OrgClockStatusTests;
 			sourceTree = "<group>";
 		};
 		FAF70DCF19C0FCE500250943 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FAF70DD019C0FCE500250943 /* StatusBarAppTests-Info.plist */,
+				FAF70DD019C0FCE500250943 /* OrgClockStatusTests-Info.plist */,
 				FAF70DD119C0FCE500250943 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -183,7 +186,7 @@
 			dependencies = (
 			);
 			name = OrgClockStatus;
-			productName = StatusBarApp;
+			productName = OrgClockStatus;
 			productReference = FAF70DA719C0FCE500250943 /* OrgClockStatus.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -201,7 +204,7 @@
 				FAF70DCD19C0FCE500250943 /* PBXTargetDependency */,
 			);
 			name = OrgClockStatusTests;
-			productName = StatusBarAppTests;
+			productName = OrgClockStatusTests;
 			productReference = FAF70DC819C0FCE500250943 /* OrgClockStatusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -245,6 +248,7 @@
 			files = (
 				FAF70DB519C0FCE500250943 /* InfoPlist.strings in Resources */,
 				FAF70DC319C0FCE500250943 /* Images.xcassets in Resources */,
+				FA1DDB8219C1E5B30099484A /* OrgClockStatus.icns in Resources */,
 				FAF70DBB19C0FCE500250943 /* Credits.rtf in Resources */,
 				FAF70DC119C0FCE500250943 /* MainMenu.xib in Resources */,
 				FAF70DDF19C106A800250943 /* OrgClockStatus.sdef in Resources */,
@@ -277,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF70DD519C0FCE500250943 /* StatusBarAppTests.m in Sources */,
+				FAF70DD519C0FCE500250943 /* OrgClockStatusTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +404,12 @@
 		FAF70DD919C0FCE500250943 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StatusBarApp/OrgClockStatus-Prefix.pch";
-				INFOPLIST_FILE = "StatusBarApp/OrgClockStatus-Info.plist";
+				GCC_PREFIX_HEADER = "OrgClockStatus/OrgClockStatus-Prefix.pch";
+				INFOPLIST_FILE = "OrgClockStatus/OrgClockStatus-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = OrgClockStatus;
 				WRAPPER_EXTENSION = app;
 			};
@@ -413,11 +418,12 @@
 		FAF70DDA19C0FCE500250943 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StatusBarApp/OrgClockStatus-Prefix.pch";
-				INFOPLIST_FILE = "StatusBarApp/OrgClockStatus-Info.plist";
+				GCC_PREFIX_HEADER = "OrgClockStatus/OrgClockStatus-Prefix.pch";
+				INFOPLIST_FILE = "OrgClockStatus/OrgClockStatus-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = OrgClockStatus;
 				WRAPPER_EXTENSION = app;
 			};
@@ -426,19 +432,19 @@
 		FAF70DDC19C0FCE500250943 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StatusBarApp.app/Contents/MacOS/StatusBarApp";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OrgClockStatus.app/Contents/MacOS/OrgClockStatus";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StatusBarApp/StatusBarApp-Prefix.pch";
+				GCC_PREFIX_HEADER = "OrgClockStatus/OrgClockStatus-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "StatusBarAppTests/StatusBarAppTests-Info.plist";
+				INFOPLIST_FILE = "OrgClockStatusTests/OrgClockStatusTests-Info.plist";
 				PRODUCT_NAME = OrgClockStatusTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -448,15 +454,15 @@
 		FAF70DDD19C0FCE500250943 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StatusBarApp.app/Contents/MacOS/StatusBarApp";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OrgClockStatus.app/Contents/MacOS/OrgClockStatus";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StatusBarApp/StatusBarApp-Prefix.pch";
-				INFOPLIST_FILE = "StatusBarAppTests/StatusBarAppTests-Info.plist";
+				GCC_PREFIX_HEADER = "OrgClockStatus/OrgClockStatus-Prefix.pch";
+				INFOPLIST_FILE = "OrgClockStatusTests/OrgClockStatusTests-Info.plist";
 				PRODUCT_NAME = OrgClockStatusTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
