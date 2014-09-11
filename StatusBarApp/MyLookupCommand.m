@@ -30,7 +30,8 @@
     
     NSLog(@"lookup: %@", stringToSearch);
     // $ osascript -e 'tell application "StatusBarApp" to lookup "first try"'
-
+    
+    [(AppDelegate *)[[NSApplication sharedApplication] delegate] statusBar].title = stringToSearch;
     
     return nil;
 }
