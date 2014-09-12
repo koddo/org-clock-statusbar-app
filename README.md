@@ -7,11 +7,11 @@ It turns red when you do nothing.
 
 ![](visual_explanation.gif?raw=true)
 
-Built for Mac OS X 10.8
-
 # How it works
 
-Install and run the app: https://github.com/koddo/OrgClockStatus/releases/download/0.1.0/OrgClockStatus.app.zip
+TODO: fix the link after release
+
+Install the app to `~/Applications` and run it: https://github.com/koddo/OrgClockStatus/releases/download/0.1.0/OrgClockStatus.app.zip
 
 It is controlled by AppleScript:
 
@@ -26,12 +26,20 @@ You can configure two keybindings for this in [BetterTouchTool](http://www.boast
 
 TODO: screenshot of bettertouchtool configuration
 
-TODO: example and link to my .emacs.d
+TODO: simple example and link to my .emacs.d
 
 
 # Notes and todos
 
+There is a checkbox to make it indicate the opposite: red when you work.
 
-TODO: maybe add  the app to launch bar
+TODO: screenshot
+
+I also use this checkbox to avoid closing the app when I don't want to track time, i.e. it's late at night, I'm tired and reading reddit.
+
+For Mac OS X 10.7 and later.
+
+TODO: maybe add a checkbox to run it at login time if anyone is interested
+
 
 

@@ -21,21 +21,25 @@
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     
     // self.statusBar.title = @"Text";
-    self.orgClockedOut = [NSImage imageNamed:@"red square"];
-    self.orgClockedIn = [NSImage imageNamed:@"black square"];
+    self.orgClockedOut = [NSImage imageNamed:@"black box"];
+    self.orgClockedIn = [NSImage imageNamed:@"red box"];
     self.statusBar.menu = self.statusMenu;
     self.statusBar.highlightMode = YES;
 
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"redMeansClockedOut"]) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"swapRedAndBlack"]) {
     
     }
     [self loadPrefs];
     [self clockOut];
 }
 
+-(NSString*) currentTaskName:(NSString*)taskName {
+    return [NSString stringWithFormat:@"Current task: %@", taskName];
+}
+
 -(void) clockIn:(NSString*)taskName {
     self.statusBar.image = self.orgClockedIn;
-    [self.statusBar.menu itemWithTag:1].title = taskName;
+    [self.statusBar.menu itemWithTag:1].title = [self currentTaskName: taskName];
     self.statusBar.toolTip = taskName;
     self.status = YES;
 }
@@ -43,7 +47,7 @@
 -(void) clockOut {
     NSString* taskName = @"nil";
     self.statusBar.image = self.orgClockedOut;
-    [self.statusBar.menu itemWithTag:1].title = taskName;
+    [self.statusBar.menu itemWithTag:1].title = [self currentTaskName: taskName];
     self.statusBar.toolTip = taskName;
     self.status = NO;
 }
@@ -68,14 +72,14 @@
 
 - (void)loadPrefs {
     NSMenuItem * theItem = [self.statusBar.menu itemWithTag:2];   // set it manually in interface builder
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"redMeansClockedOut"]) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"swapRedAndBlack"]) {
         [theItem setState: NSOnState];
-        self.orgClockedOut = [NSImage imageNamed:@"red square"];
-        self.orgClockedIn = [NSImage imageNamed:@"black square"];
+        self.orgClockedOut = [NSImage imageNamed:@"black box"];
+        self.orgClockedIn = [NSImage imageNamed:@"red box"];
     } else {
         [theItem setState: NSOffState];
-        self.orgClockedOut = [NSImage imageNamed:@"black square"];
-        self.orgClockedIn = [NSImage imageNamed:@"red square"];
+        self.orgClockedOut = [NSImage imageNamed:@"red box"];
+        self.orgClockedIn = [NSImage imageNamed:@"black box"];
     }
     [self refresh];
 }
@@ -83,16 +87,16 @@
 - (void)toggle {
     NSMenuItem * theItem = [self.statusBar.menu itemWithTag:2];   // set it manually in interface builder
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"redMeansClockedOut"]) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"swapRedAndBlack"]) {
         [theItem setState: NSOffState];
-        self.orgClockedOut = [NSImage imageNamed:@"black square"];
-        self.orgClockedIn = [NSImage imageNamed:@"red square"];
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"redMeansClockedOut"];
+        self.orgClockedOut = [NSImage imageNamed:@"red box"];
+        self.orgClockedIn = [NSImage imageNamed:@"black box"];
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"swapRedAndBlack"];
     } else {
         [theItem setState: NSOnState];
-        self.orgClockedOut = [NSImage imageNamed:@"red square"];
-        self.orgClockedIn = [NSImage imageNamed:@"black square"];
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"redMeansClockedOut"];
+        self.orgClockedOut = [NSImage imageNamed:@"black box"];
+        self.orgClockedIn = [NSImage imageNamed:@"red box"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"swapRedAndBlack"];
     }
     [self refresh];
 }
