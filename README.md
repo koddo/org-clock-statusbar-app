@@ -49,7 +49,7 @@ $ osascript -e 'tell application "org-clock-status" to swap red and black'
 now checked
 ```
 
-For Mac OS X 10.7 and later.
+For Mac OS X 10.8 and later.
 
 TODO: maybe add a checkbox to run it at login time if anyone is interested
 
