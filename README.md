@@ -18,7 +18,7 @@ Install the app to `~/Applications` and run it.
 
 https://github.com/koddo/org-clock-status-app/releases/download/1.0/org-clock-status.app.zip
 
-Put these lines to your dotemacs.
+Add these lines to your dotemacs.
 
 ```emacs-lisp
 (defadvice org-clock-in (after org-clock-status-app-in activate)
