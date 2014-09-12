@@ -11,7 +11,7 @@ I use emacs with org-mode and track my time. I used to forget to clock in, org-c
 
 See this [gif for explanation](explanation.gif?raw=true).
 
-# Configure emacs and org-mode to use it
+# Set up
 
 Install the app to `~/Applications` and run it: https://github.com/koddo/org-clock-status/releases/download/1.0.0/org-clock-status.app.zip
 
