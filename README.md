@@ -27,16 +27,6 @@ Then put these lines to your dotemacs.
 ```
 
 
-# How it works
-
-It is controlled by AppleScript:
-
-```
-$ osascript -e 'tell application "org-clock-status" to clock in "some task"'
-$ osascript -e 'tell application "org-clock-status" to clock out'
-```
-
-
 # Notes and todos
 
 There is a checkbox to make it indicate the opposite: red when you work.
@@ -45,9 +35,11 @@ There is a checkbox to make it indicate the opposite: red when you work.
 
 I also use this checkbox to avoid closing the app when I don't want to track time, i.e. it's late at night, I'm tired and reading reddit.
 
-Programmatically, if needed:
+It is controlled by AppleScript:
 
 ```
+$ osascript -e 'tell application "org-clock-status" to clock in "some task"'
+$ osascript -e 'tell application "org-clock-status" to clock out'
 $ osascript -e 'tell application "org-clock-status" to swap red and black'
 now checked
 ```
