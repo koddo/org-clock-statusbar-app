@@ -11,20 +11,11 @@ I use emacs with org-mode and track my time. I used to forget to clock in, org-c
 
 See this [gif for explanation](explanation.gif?raw=true).
 
-# How it works
+# Configure emacs and org-mode to use it
 
 Install the app to `~/Applications` and run it: https://github.com/koddo/org-clock-status/releases/download/1.0.0/org-clock-status.app.zip
 
-It is controlled by AppleScript:
-
-```
-$ osascript -e 'tell application "org-clock-status" to clock in "some task"'
-$ osascript -e 'tell application "org-clock-status" to clock out'
-```
-
-# Configure emacs and org-mode to use it
-
-Just put these lines to your dotemacs.
+Then put these lines to your dotemacs.
 
 ```
 (defadvice org-clock-in (after org-clock-status-app-in activate)
@@ -33,6 +24,16 @@ Just put these lines to your dotemacs.
 (defadvice org-clock-out (after org-clock-status-app-out activate)
   "Tell org-clock-status.app to clock out."
   (call-process "/usr/bin/osascript" nil 0 nil "-e" "tell application \"org-clock-status\" to clock out"))
+```
+
+
+# How it works
+
+It is controlled by AppleScript:
+
+```
+$ osascript -e 'tell application "org-clock-status" to clock in "some task"'
+$ osascript -e 'tell application "org-clock-status" to clock out'
 ```
 
 
