@@ -14,7 +14,7 @@ You can watch an [intro gif](intro.gif?raw=true).
 
 # Set up
 
-Install the app to `~/Applications` and run it. You can also built it yourselt, see notes.
+Install the app to `~/Applications` and run it.
 
 https://github.com/koddo/org-clock-status-app/releases/download/1.0/org-clock-status.app.zip
 
