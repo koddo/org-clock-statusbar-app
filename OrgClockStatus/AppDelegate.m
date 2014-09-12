@@ -54,9 +54,9 @@
 
 -(void) refresh {
     if (self.status) {
-        [ self clockIn : [self.statusBar.menu itemWithTag:1].title ];
+        self.statusBar.image = self.orgClockedIn;
     } else {
-        [ self clockOut ];
+        self.statusBar.image = self.orgClockedOut;
     }
 }
 
