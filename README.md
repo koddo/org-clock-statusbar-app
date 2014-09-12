@@ -1,9 +1,9 @@
 org-clock-status-app
 ======
 
-# A small box in status bar
+# Intro
 
-It turns red when you do nothing.
+A small box in status bar. It turns red when you do nothing.
 
 ![](intro.png?raw=true)
 
