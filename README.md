@@ -11,11 +11,12 @@ I use emacs with org-mode and track my time. I used to forget to clock in, org-c
 
 See this [gif for explanation](explanation.gif?raw=true).
 
+
 # Set up
 
 Install the app to `~/Applications` and run it: https://github.com/koddo/org-clock-status/releases/download/1.0.0/org-clock-status.app.zip
 
-Then put these lines to your dotemacs.
+Put these lines to your dotemacs.
 
 ```
 (defadvice org-clock-in (after org-clock-status-app-in activate)
