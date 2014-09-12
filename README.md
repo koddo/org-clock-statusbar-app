@@ -5,7 +5,7 @@ org-clock-status-app
 
 It turns red when you do nothing.
 
-[](intro.png?raw=true)
+![](intro.png?raw=true)
 
 I use emacs with org-mode and track my time. I used to forget to clock in, org-clock-status.app solves this problem. And it helps a bit against procrastination.
 
