@@ -20,7 +20,7 @@ https://github.com/koddo/org-clock-status-app/releases/download/1.0/org-clock-st
 
 Put these lines to your dotemacs.
 
-```lisp
+```emacs-lisp
 (defadvice org-clock-in (after org-clock-status-app-in activate)
   "Tell org-clock-status.app to clock in."
   (call-process "/usr/bin/osascript" nil 0 nil "-e" (concat "tell application \"org-clock-status\" to clock in \"" org-clock-current-task "\"")))
