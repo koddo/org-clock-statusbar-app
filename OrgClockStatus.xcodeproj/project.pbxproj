@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA411D0519C33F1F000AB55C /* SwapRedAndBlack.m in Sources */ = {isa = PBXBuildFile; fileRef = FA411D0419C33F1F000AB55C /* SwapRedAndBlack.m */; };
 		FAE5739619C142D6008B9107 /* OrgClockIn.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5739519C142D6008B9107 /* OrgClockIn.m */; };
 		FAE5739919C144C5008B9107 /* OrgClockOut.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE5739819C144C5008B9107 /* OrgClockOut.m */; };
 		FAF70DAB19C0FCE500250943 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF70DAA19C0FCE500250943 /* Cocoa.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA411D0319C33F1F000AB55C /* SwapRedAndBlack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwapRedAndBlack.h; sourceTree = "<group>"; };
+		FA411D0419C33F1F000AB55C /* SwapRedAndBlack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwapRedAndBlack.m; sourceTree = "<group>"; };
 		FAE5739419C142D6008B9107 /* OrgClockIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgClockIn.h; sourceTree = "<group>"; };
 		FAE5739519C142D6008B9107 /* OrgClockIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgClockIn.m; sourceTree = "<group>"; };
 		FAE5739719C144C5008B9107 /* OrgClockOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgClockOut.h; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				FAE5739519C142D6008B9107 /* OrgClockIn.m */,
 				FAE5739719C144C5008B9107 /* OrgClockOut.h */,
 				FAE5739819C144C5008B9107 /* OrgClockOut.m */,
+				FA411D0319C33F1F000AB55C /* SwapRedAndBlack.h */,
+				FA411D0419C33F1F000AB55C /* SwapRedAndBlack.m */,
 			);
 			path = OrgClockStatus;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				FAE5739919C144C5008B9107 /* OrgClockOut.m in Sources */,
 				FAE5739619C142D6008B9107 /* OrgClockIn.m in Sources */,
 				FAF70DB719C0FCE500250943 /* main.m in Sources */,
+				FA411D0519C33F1F000AB55C /* SwapRedAndBlack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

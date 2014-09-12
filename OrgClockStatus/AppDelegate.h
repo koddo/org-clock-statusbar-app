@@ -19,10 +19,12 @@
 @property BOOL status;
 
 
--(IBAction)openGithubPage:(id)sender;
--(IBAction)toggleRedMeansClockedOut:(id)sender;
+- (IBAction)openGithubPage:(id)sender;
+- (IBAction)toggleRedMeansClockedOut:(id)sender;
 
--(void) clockIn:(NSString*)taskName;
--(void) clockOut;
+- (void) clockIn: (NSString*)taskName;
+- (void) clockOut;
+- (NSString*) toggle;
+
 
 @end

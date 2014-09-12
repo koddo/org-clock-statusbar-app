@@ -16,8 +16,8 @@ Install the app to `~/Applications` and run it: https://github.com/koddo/OrgCloc
 It is controlled by AppleScript:
 
 ```
-$ osascript -e 'tell application "org-clock-status" to clockin "some task"'
-$ osascript -e 'tell application "org-clock-status" to clockout'
+$ osascript -e 'tell application "org-clock-status" to clock in "some task"'
+$ osascript -e 'tell application "org-clock-status" to clock out'
 ```
 
 # Configure emacs and org-mode to use it
@@ -36,6 +36,13 @@ There is a checkbox to make it indicate the opposite: red when you work.
 TODO: screenshot
 
 I also use this checkbox to avoid closing the app when I don't want to track time, i.e. it's late at night, I'm tired and reading reddit.
+
+```
+$ osascript -e 'tell application "org-clock-status" to swap red and black'
+now checked
+$ osascript -e 'tell application "org-clock-status" to swap red and black'
+now unchecked
+```
 
 For Mac OS X 10.7 and later.
 

@@ -84,21 +84,26 @@
     [self refresh];
 }
 
-- (void)toggle {
+- (NSString*)toggle {
     NSMenuItem * theItem = [self.statusBar.menu itemWithTag:2];   // set it manually in interface builder
+    NSString* result;
     
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"swapRedAndBlack"]) {
         [theItem setState: NSOffState];
         self.orgClockedOut = [NSImage imageNamed:@"red box"];
         self.orgClockedIn = [NSImage imageNamed:@"black box"];
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"swapRedAndBlack"];
+        result = @"now unchecked";
     } else {
         [theItem setState: NSOnState];
         self.orgClockedOut = [NSImage imageNamed:@"black box"];
         self.orgClockedIn = [NSImage imageNamed:@"red box"];
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"swapRedAndBlack"];
+        result = @"now checked";
     }
     [self refresh];
+    
+    return result;
 }
 
 

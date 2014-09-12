@@ -3,14 +3,18 @@
 
 <dictionary title="OrgClockStatus">
     <suite name="OrgClockStatus Suite" code="SBAS" description="OrgClockStatus Scripts">
-         <command name="clockin" code="clockinn" description="clock in">
+         <command name="clock in" code="clockinn" description="clock in">
             <cocoa class="OrgClockIn"/>
             <direct-parameter description="name of task we clock in and show in tooltip">
                 <type type="text"/>
             </direct-parameter>
         </command>
-        <command name="clockout" code="clockout" description="clock out">
+        <command name="clock out" code="clockout" description="clock out">
             <cocoa class="OrgClockOut"/>
+        </command>
+        <command name="swap red and black" code="swaprnbc" description="invert behaviour: swap red and black">
+            <cocoa class="SwapRedAndBlack"/>
+            <result type="text" description="return state of the checkbox"/>
         </command>
     </suite>
 </dictionary>
