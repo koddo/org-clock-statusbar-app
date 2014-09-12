@@ -47,7 +47,11 @@ $ osascript -e 'tell application "org-clock-status" to swap red and black'
 now checked
 ```
 
-To build it yourself: `xcodebuild -configuration Release`
+To build it yourself:
+
+```
+$ xcodebuild -configuration Release
+```
 
 For Mac OS X 10.8 and later.
 
