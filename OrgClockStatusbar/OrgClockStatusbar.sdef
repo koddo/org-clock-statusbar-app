@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
 
-<dictionary title="OrgClockStatus">
-    <suite name="OrgClockStatus Suite" code="SBAS" description="OrgClockStatus Scripts">
+<dictionary title="OrgClockStatusbar">
+    <suite name="OrgClockStatusbar Suite" code="SBAS" description="OrgClockStatusbar Scripts">
          <command name="clock in" code="clockinn" description="clock in">
             <cocoa class="OrgClockIn"/>
             <direct-parameter description="name of task we clock in and show in tooltip">

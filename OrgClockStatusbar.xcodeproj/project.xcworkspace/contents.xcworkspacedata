@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:OrgClockStatus.xcodeproj">
+      location = "self:OrgClockStatusbar.xcodeproj">
    </FileRef>
 </Workspace>
