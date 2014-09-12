@@ -14,7 +14,9 @@ You can watch an [intro gif](intro.gif?raw=true).
 
 # Set up
 
-Install the app to `~/Applications` and run it: https://github.com/koddo/org-clock-status-app/releases/download/1.0/org-clock-status.app.zip
+Install the app to `~/Applications` and run it. You can also built it yourselt, see notes.
+
+https://github.com/koddo/org-clock-status-app/releases/download/1.0/org-clock-status.app.zip
 
 Put these lines to your dotemacs.
 
@@ -47,7 +49,7 @@ $ osascript -e 'tell application "org-clock-status" to swap red and black'
 now checked
 ```
 
-To build it yourself:
+You can build it yourself using Xcode 5:
 
 ```
 $ xcodebuild -configuration Release
