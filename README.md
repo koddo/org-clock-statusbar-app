@@ -27,6 +27,8 @@ Put these lines to your dotemacs.
   (call-process "/usr/bin/osascript" nil 0 nil "-e" "tell application \"org-clock-status\" to clock out"))
 ```
 
+Then track your time as usual.
+
 
 # Notes and todos
 
