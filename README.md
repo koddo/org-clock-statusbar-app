@@ -7,7 +7,7 @@ A small box in status bar. It turns red when you do nothing.
 
 ![](img/intro.png?raw=true)
 
-I use org-mode to track my time. I used to forget to clock in and `org-clock-statusbar.app` eliminates this problem. It also helps a bit against procrastination, hurrying me with the reddest color my monitor can display.
+I use org-mode to track my time. I used to forget to clock in and `org-clock-statusbar.app` eliminated this problem. It also helps a bit against procrastination, hurrying me with the reddest color my monitor can display.
 
 You can watch an [intro gif](img/intro.gif?raw=true).
 
