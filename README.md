@@ -51,6 +51,8 @@ You can build it yourself using Xcode 5:
 
 ```
 $ xcodebuild -configuration Release
+$ cp -r build/Release/org-clock-statusbar.app ~/Applications/
+
 ```
 
 For Mac OS X 10.8 and later.
