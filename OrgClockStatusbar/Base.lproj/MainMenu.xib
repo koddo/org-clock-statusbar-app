@@ -679,7 +679,7 @@
                         <action selector="toggleRedMeansClockedOut:" target="Voe-Tx-rLC" id="NIQ-DY-MKb"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Visit org-clock-status github page" id="UMR-7G-HYa">
+                <menuItem title="Visit github page" id="UMR-7G-HYa">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="openGithubPage:" target="Voe-Tx-rLC" id="kGq-ED-ex3"/>
