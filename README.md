@@ -12,7 +12,7 @@ I use org-mode to track my time. I used to forget to clock in and `org-clock-sta
 You can watch an [intro gif](img/intro.gif?raw=true).
 
 
-# Set up
+# Setup
 
 Install the app to `~/Applications` and run it.
 
