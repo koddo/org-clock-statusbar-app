@@ -7,7 +7,7 @@ A small box in status bar. It turns red when you do nothing.
 
 ![](img/intro.png?raw=true)
 
-I use org-mode to track my time. I used to forget to clock in and this tiny app solves the issue. It also helps a bit against procrastination, hurrying me with the reddest color my monitor can display.
+I use org-mode to track my time. I used to forget to clock in and `org-clock-statusbar.app` eliminates this problem. It also helps a bit against procrastination, hurrying me with the reddest color my monitor can display.
 
 You can watch an [intro gif](img/intro.gif?raw=true).
 
@@ -16,9 +16,9 @@ You can watch an [intro gif](img/intro.gif?raw=true).
 
 Install the app to `~/Applications` and run it.
 
-https://github.com/koddo/org-clock-statusbar-app/releases/download/1.0/org-clock-statusbar.app.zip
+https://github.com/koddo/org-clock-statusbar-app/releases/download/1.0.1/org-clock-statusbar.app.zip
 
-Add these lines to your dotemacs.
+Add these lines to your dotemacs:
 
 ```emacs-lisp
 (defadvice org-clock-in (after org-clock-statusbar-app-in activate)
@@ -52,7 +52,6 @@ You can build it yourself using Xcode 5:
 ```
 $ xcodebuild -configuration Release
 ```
-
 
 For Mac OS X 10.8 and later.
 
