@@ -1,4 +1,4 @@
-org-clock-status-app
+org-clock-statusbar-app
 ======
 
 # Intro
@@ -16,15 +16,15 @@ You can watch an [intro gif](img/intro.gif?raw=true).
 
 Install the app to `~/Applications` and run it.
 
-https://github.com/koddo/org-clock-status-app/releases/download/1.0/org-clock-status.app.zip
+https://github.com/koddo/org-clock-statusbar-app/releases/download/1.0/org-clock-statusbar.app.zip
 
 Add these lines to your dotemacs.
 
 ```emacs-lisp
-(defadvice org-clock-in (after org-clock-status-app-in activate)
-  (call-process "/usr/bin/osascript" nil 0 nil "-e" (concat "tell application \"org-clock-status\" to clock in \"" org-clock-current-task "\"")))
-(defadvice org-clock-out (after org-clock-status-app-out activate)
-  (call-process "/usr/bin/osascript" nil 0 nil "-e" "tell application \"org-clock-status\" to clock out"))
+(defadvice org-clock-in (after org-clock-statusbar-app-in activate)
+  (call-process "/usr/bin/osascript" nil 0 nil "-e" (concat "tell application \"org-clock-statusbar\" to clock in \"" org-clock-current-task "\"")))
+(defadvice org-clock-out (after org-clock-statusbar-app-out activate)
+  (call-process "/usr/bin/osascript" nil 0 nil "-e" "tell application \"org-clock-statusbar\" to clock out"))
 ```
 
 Then track your time as usual.
@@ -41,9 +41,9 @@ I also use this checkbox to avoid closing the app when I don't want to track tim
 It is controlled by AppleScript:
 
 ```
-$ osascript -e 'tell application "org-clock-status" to clock in "some task"'
-$ osascript -e 'tell application "org-clock-status" to clock out'
-$ osascript -e 'tell application "org-clock-status" to swap red and black'
+$ osascript -e 'tell application "org-clock-statusbar" to clock in "some task"'
+$ osascript -e 'tell application "org-clock-statusbar" to clock out'
+$ osascript -e 'tell application "org-clock-statusbar" to swap red and black'
 now checked
 ```
 
