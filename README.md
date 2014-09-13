@@ -53,6 +53,7 @@ You can build it yourself using Xcode 5:
 $ xcodebuild -configuration Release
 ```
 
+
 For Mac OS X 10.8 and later.
 
 TODO: maybe add a checkbox to run it at login time if anyone is interested
