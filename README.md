@@ -21,10 +21,8 @@ https://github.com/koddo/org-clock-statusbar-app/releases/download/1.0.1/org-clo
 Add these lines to your dotemacs:
 
 ```emacs-lisp
-(defadvice org-clock-in (after org-clock-statusbar-app-in activate)
-  (call-process "/usr/bin/osascript" nil 0 nil "-e" (concat "tell application \"org-clock-statusbar\" to clock in \"" org-clock-current-task "\"")))
-(defadvice org-clock-out (after org-clock-statusbar-app-out activate)
-  (call-process "/usr/bin/osascript" nil 0 nil "-e" "tell application \"org-clock-statusbar\" to clock out"))
+(add-hook 'org-clock-in-hook (lambda () (call-process "/usr/bin/osascript" nil 0 nil "-e" (concat "tell application \"org-clock-statusbar\" to clock in \"" org-clock-current-task "\""))))
+(add-hook 'org-clock-out-hook (lambda () (call-process "/usr/bin/osascript" nil 0 nil "-e" "tell application \"org-clock-statusbar\" to clock out")))
 ```
 
 Then track your time as usual.
