@@ -54,6 +54,8 @@ $ cp -r build/Release/org-clock-statusbar.app ~/Applications/
 
 For Mac OS X 10.8 and later.
 
+There is an alternative written in MacRuby: https://github.com/jordonbiondo/osx-org-clock-menubar
+
 TODO: maybe add a checkbox to run it at login time if anyone is interested
 
 
