@@ -56,9 +56,16 @@ For Mac OS X 10.8 and later.
 
 There is an alternative written in MacRuby: https://github.com/jordonbiondo/osx-org-clock-menubar
 
-Grayscale favicons in firefox tabs to avoid distraction by bright colors: https://addons.mozilla.org/en-us/firefox/addon/gray-scale-toolbar-icons/reviews/670602/
-
 TODO: maybe add a checkbox to run it at login time if anyone is interested
 
+## Grayscale favicons in browser
+
+Grayscale favicons in firefox tabs to avoid distraction by bright colors: https://addons.mozilla.org/en-us/firefox/addon/gray-scale-toolbar-icons/reviews/670602/
+
+~/Library/Application Support/Firefox/Profiles/[...].default/chrome/userChrome.css:
+
+```
+.tabbrowser-tab .tab-content, toolbarbutton { filter: grayscale(1) !important; }
+```
 
 
