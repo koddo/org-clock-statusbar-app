@@ -60,7 +60,7 @@ TODO: maybe add a checkbox to run it at login time if anyone is interested
 
 ## Grayscale favicons in browser
 
-Grayscale favicons in firefox tabs to avoid distraction by bright colors: https://addons.mozilla.org/en-us/firefox/addon/gray-scale-toolbar-icons/reviews/670602/
+Grayscale favicons in firefox tabs to avoid distraction from bright colors: https://addons.mozilla.org/en-us/firefox/addon/gray-scale-toolbar-icons/reviews/670602/
 
 ~/Library/Application Support/Firefox/Profiles/[...].default/chrome/userChrome.css:
 
