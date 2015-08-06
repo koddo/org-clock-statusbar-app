@@ -60,7 +60,8 @@ TODO: maybe add a checkbox to run it at login time if anyone is interested
 
 ## Grayscale favicons in browser
 
-Favicons in tabs are bright and distracting. This will make them grayscale in firefox: 
+Favicons in tabs are bright and distracting. This will make them grayscale in firefox:
+
 ~/Library/Application Support/Firefox/Profiles/[...].default/chrome/userChrome.css:
 
 ```
