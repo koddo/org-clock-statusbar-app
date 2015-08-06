@@ -60,12 +60,12 @@ TODO: maybe add a checkbox to run it at login time if anyone is interested
 
 ## Grayscale favicons in browser
 
-Grayscale favicons in firefox tabs to avoid distraction by bright colors: https://addons.mozilla.org/en-us/firefox/addon/gray-scale-toolbar-icons/reviews/670602/
-
+Favicons in tabs are bright and distracting. This will make them grayscale in firefox: 
 ~/Library/Application Support/Firefox/Profiles/[...].default/chrome/userChrome.css:
 
 ```
 .tabbrowser-tab .tab-content, toolbarbutton { filter: grayscale(1) !important; }
 ```
 
+Source: https://addons.mozilla.org/en-us/firefox/addon/gray-scale-toolbar-icons/reviews/670602/
 
