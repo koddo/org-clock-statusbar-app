@@ -58,15 +58,4 @@ There is an alternative written in MacRuby: https://github.com/jordonbiondo/osx-
 
 TODO: maybe add a checkbox to run it at login time if anyone is interested
 
-## Grayscale favicons in browser
-
-Favicons in tabs are bright and distracting. This will make them grayscale in firefox:
-
-~/Library/Application Support/Firefox/Profiles/[...].default/chrome/userChrome.css:
-
-```
-.tabbrowser-tab .tab-content, toolbarbutton { filter: grayscale(1) !important; }
-```
-
-Source: https://addons.mozilla.org/en-us/firefox/addon/gray-scale-toolbar-icons/reviews/670602/
-
+I have some global bettertouchtools keybindings for this app, see readme for my [dotemacs](https://github.com/koddo/.emacs.d).
