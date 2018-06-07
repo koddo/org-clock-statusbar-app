@@ -56,6 +56,8 @@ For Mac OS X 10.8 and later.
 
 There is an alternative written in MacRuby: https://github.com/jordonbiondo/osx-org-clock-menubar
 
+In Gnome you can use (short-memo)[https://github.com/kusabashira/short-memo] extension with some configuration: <https://www.reddit.com/r/orgmode/comments/8keyke/tip_org_clock_on_desktop_gnome_topbar/>
+
 TODO: maybe add a checkbox to run it at login time if anyone is interested
 
 I have some global bettertouchtools keybindings for this app, see readme for my [dotemacs](https://github.com/koddo/.emacs.d).
