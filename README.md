@@ -34,7 +34,7 @@ There is a checkbox to make it indicate the opposite: red when you work.
 
 ![](img/swap_red_and_black.png?raw=true)
 
-I also use this checkbox to avoid closing the app when I don't want to track time, i.e. it's late at night, I'm tired and reading reddit.
+I also use this checkbox to avoid closing the app when I don't want to track time, i.e. it's late at night, I'm tired and reading reddit. Update: I no longer use the checkbox this way, I clock in a procractination task instead.
 
 The app is controlled by AppleScript:
 
